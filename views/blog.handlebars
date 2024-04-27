@@ -3,6 +3,8 @@
   <p>{{content}}</p>
   <p>Created by {{user.username}} on {{date}}</p>
   <p>
-    <button class="btn btn-primary">Comment</button>
-  </p>
+    <input type="text" name="comment" id="comment">
+    <button data-id="{{id}}" id="commentBtn" class="btn btn-primary">Comment</button>
+  </p> 
 </div>
+<script src="/js/comment.js"></script>
