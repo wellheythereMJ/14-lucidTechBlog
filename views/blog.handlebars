@@ -6,5 +6,13 @@
     <input type="text" name="comment" id="comment">
     <button data-id="{{id}}" id="commentBtn" class="btn btn-primary">Comment</button>
   </p> 
+  <div>
+    {{#each comments as |comment|}}
+    <div>
+      <p>{{comment.comment}}</p>
+      <p>Created by {{comment.user.username}} on {{comment.date}}</p>
+    </div>
+    {{/each}}
+  </div>
 </div>
 <script src="/js/comment.js"></script>
